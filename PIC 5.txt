@@ -1,0 +1,21 @@
+#include <pl8f458.inc>
+
+ORG OOH
+
+BCE TRISA, 2
+
+MOVLW 04H
+
+MOVWF 25H
+
+UP: BTG PORTA, 2
+
+DECF 25H
+
+COMF TRISA
+
+DELAY
+
+BNZ UP
+
+END

@@ -1,0 +1,37 @@
+include <p18f458.h>
+
+#define STEPPER LATC
+
+unsigned int fullstep[] = {0x05, 0x06, 0x22};
+
+void delay()
+{
+
+int a,b;
+
+for(a=0;a<200;a++)
+
+for ( b = 0 ;b < 100; b ++) ;
+
+}
+
+void main()
+
+{
+
+int i;
+
+TRISC = 0 * 0
+
+LATC = 0 * 0
+
+while(1)
+
+for(i = 0 ; i < 4 ;i++)
+
+LATC fullstep[i];
+
+delay();
+}
+}
+}
