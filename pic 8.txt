@@ -1,0 +1,35 @@
+#include <p18f458.h>
+
+void load_timer()
+
+(
+
+TMROH OxCF;
+
+TMROL 0x2C;
+
+}
+
+void main(void)
+
+ADCON1 = 0x07;
+
+TRISAbits.TRISA4 = 0;
+
+load_timer();
+
+TOCON = 0x87;
+
+while(1)
+
+while(INTCONbits. TMROIF)continue;
+
+LATAbits. LATA4=LATAbits. LATA4,
+
+INTCONbits. TMROIF =0;
+
+load_timer();
+
+}
+
+}
